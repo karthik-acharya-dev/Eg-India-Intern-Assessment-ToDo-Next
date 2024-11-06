@@ -9,12 +9,6 @@ const TaskItem = ({ task, onToggle }) => {
       }`}
       onClick={() => onToggle(task.id)}
     >
-      {/* <input
-        type="checkbox"
-        checked={task.completed}
-        onChange={() => onToggle(task.id)}
-        className="form-checkbox rounded-full h-5 w-5 text-green-500 bg-green-500 border-none"
-      /> */}
       <div
         className={` rounded-full w-[32px] h-[32px] ml-2 ${
           task.completed
