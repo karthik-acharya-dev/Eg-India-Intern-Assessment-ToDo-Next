@@ -19,7 +19,7 @@ function TaskInput({ onAdd }) {
         onChange={(e) => setTask(e.target.value)}
       />
       <button
-        className="bg-[#2d6ffc] py-2 px-4 md:px-6 rounded-md text-white text-sm md:text-[16px]"
+        className="bg-[#2d6ffc] hover:bg-blue-300 hover:shadow-[inset_0px_0px_22px_1px_#228be6] py-2 px-4 md:px-6 rounded-md text-white text-sm md:text-[16px]"
         onClick={handleAdd}
       >
         Add

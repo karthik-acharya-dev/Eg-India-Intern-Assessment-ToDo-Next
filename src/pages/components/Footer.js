@@ -7,7 +7,7 @@ function Footer({ taskCount, onDeleteAll }) {
       <span className="text-gray-400">
         {taskCount} item{s && "s"}
       </span>
-      <span className="text-gray-400">
+      <span className="text-gray-400 hover:text-gray-500">
         <button onClick={onDeleteAll}>Clear All</button>
       </span>
     </div>
