@@ -6,9 +6,7 @@ const TaskItem = ({ task, onToggle }) => {
 
   return (
     <div
-      className={`flex items-center p-2 rounded gap-2 ${
-        task.completed ? "bg-gray-300" : ""
-      }`}
+      className={`flex items-center p-2 rounded gap-2 `}
       onClick={() => onToggle(task.id)}
     >
       <div

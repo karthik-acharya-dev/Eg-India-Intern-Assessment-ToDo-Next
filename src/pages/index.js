@@ -37,6 +37,7 @@ export default function Home() {
               Daily To Do List
             </h1>
             <TaskInput onAdd={addTask} />
+
             <TaskList tasks={tasks} onToggle={toggleTaskCompletion} />
           </div>
           <Footer onDeleteAll={onDeleteItem} taskCount={tasks.length} />
