@@ -3,7 +3,9 @@ import React, { useState } from "react";
 
 const TaskItem = ({ task, onToggle, onDelete, onEdit }) => {
   const [isEditing, setIsEditing] = useState(false);
-  const [editedTask, setEditedTask] = useState(task.name);
+  const [editedTask, setEditedTask] = useState(task?.name || "");
+
+  if (!task) return null; // Render nothing if task is undefined
 
   const handleEdit = () => {
     if (isEditing && editedTask.trim()) {
@@ -26,7 +28,7 @@ const TaskItem = ({ task, onToggle, onDelete, onEdit }) => {
           className={`rounded-full w-[32px] h-[32px] ml-2 ${
             task.completed
               ? "bg-[#00D8A7] flex justify-center items-center"
-              : "border-[1.5px] "
+              : "border-[1.5px]"
           }`}
         >
           <Image
